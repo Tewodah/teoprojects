@@ -3,30 +3,30 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
+    color: hsl(0, 0%, 3%);
 }
 
 header {
-    background-color: #4CAF50;
+    background-color:#550A35;
     color: white;
     text-align: center;
     padding: 20px 0;
 }
 
 nav {
-    background-color: #333;
+    background-color: #ffffff;
     overflow: hidden;
 }
 
 
-.container {
-    padding: 20px;
-    width: 80%;
+.homepage {
+    padding: 30px;
+    width: 100%;
     margin: 0 auto;
 }
 
 h2 {
-    color: #4CAF50;
+    color: #550A35;
 }
 
 section {
@@ -34,7 +34,7 @@ section {
 }
 
 footer {
-    background-color: #333;
+    background-color:  #550A35;
     color: white;
     text-align: center;
     padding: 10px;
@@ -48,9 +48,9 @@ footer {
 }
 
 .image img {
-    width: 200px;
-    height: auto;
-    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border-radius: 150%;
 }
 .contact-form {
     background-color: #fff;
@@ -81,7 +81,7 @@ footer {
 }
 
 .submit-btn {
-    background-color: #4CAF50;
+    background-color:#550A35;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -102,10 +102,10 @@ footer {
 }
 
 footer {
-    background-color: #333;
+    background-color: #360a2381;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     position: fixed;
     width: 100%;
     bottom: 0;
