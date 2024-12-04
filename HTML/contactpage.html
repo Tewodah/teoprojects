@@ -2,35 +2,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tewodah</title>
+    <title>ContactPage</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
-<header>
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
-</header>
 <body>
-    <nav> 
-        <a href="https://www.facebook.com" target="_blank"> FACEBOOK </a> |
-        <a href="https://www.instagram.com" target="_blank"> INSTAGRAM </a> |
+    <header>
+        <h1>Contact Me</h1>
+    </header>
 
+    <nav>
+        <a href="#form">Contact Form</a>
+        <a href="#info">Contact Info</a>
     </nav>
-<main>
-    <h1>Optio eos cumque consectetur ducimus repellat obcaecati perspiciatis. </h1>
-    <form action="/action_page.php" method="get">
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <input type="submit" value="Submit">
-        </form>
-        
 
-        <textarea></textarea> 
-        <br>
-        <
-</main>
-<footer>visit our social media platforms 
-    <a href="https://www.facebook.com" target="_blank"> FACEBOOK </a> |
-    <a href="https://www.instagram.com" target="_blank"> INSTAGRAM </a> |
-</footer>
+    <div class="container">
+        <section id="form">
+            <h2>Get in Touch</h2>
+            <div class="contact-form">
+                <form action="submit-form.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" placeholder="Write your message here"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="info" class="contact-info">
+            <h3>Other Ways to Reach Me</h3>
+            <p>you can contact me using the details below:</p>
+            <p><strong>Phone:</strong> +251 9467 0120</p>
+            <p><strong>Email:</strong> <a href="tewodahnaz7@gmail.com">tewodahnaz7@gmail.com</a></p>
+            <p><strong>Social Media:</strong></p>
+            <ul>
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 tewodah. All rights reserved.</p>
+    </footer>
 </body>
 </html>
