@@ -1,17 +1,25 @@
 .nav-container{
     display: flex;
     padding: 20px 50px 20px 50px;
-    background-color: blueviolet;
+    background-color: HEX #7C3C00;
     align-items: flex-end;
     align-content: center;
     flex-wrap: wrap;
-    flex-direction: row-reverse;
+    flex-direction: row;
     gap: 10px;
+    justify-content: flex-end;
+    font-size: larger;
 }
 .biography-container {
     display: flex;
-    background-color: rgba(218, 133, 185, 0.39);
-    padding: 10px 20px 10px 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 50px 50px 50px 50px;
+    justify-content: flex-start;
+    align-content: space-around;
+    background-color: HEX #D5C6E0;
+    gap: 50px;
+    text-align: start;
 
 }
 .section-one {
@@ -19,5 +27,14 @@
 }
 .section-two {
     width 75%;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px 10px 20px;
+    background-color: HEX #7C3C00;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: center;
 
 }
