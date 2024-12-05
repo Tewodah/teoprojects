@@ -1,0 +1,23 @@
+.nav-container{
+    display: flex;
+    padding: 20px 50px 20px 50px;
+    background-color: blueviolet;
+    align-items: flex-end;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+.biography-container {
+    display: flex;
+    background-color: rgba(218, 133, 185, 0.39);
+    padding: 10px 20px 10px 20px;
+
+}
+.section-one {
+    width 25%;
+}
+.section-two {
+    width 75%;
+
+}
