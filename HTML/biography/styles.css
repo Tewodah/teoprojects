@@ -1,14 +1,14 @@
 .nav-container{
     display: flex;
-    padding: 20px 50px 20px 50px;
-    background-color: HEX #7C3C00;
+    padding: 25px 50px 25px 50px;
+    background-color:  #701F47;
     align-items: flex-end;
     align-content: center;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 10px;
     justify-content: flex-end;
-    font-size: larger;
+    font-size: x-large;
 }
 .biography-container {
     display: flex;
@@ -17,7 +17,7 @@
     padding: 50px 50px 50px 50px;
     justify-content: flex-start;
     align-content: space-around;
-    background-color: HEX #D5C6E0;
+    background-color:  #E0B4E8;
     gap: 50px;
     text-align: start;
 
@@ -32,7 +32,7 @@
     display: flex;
     flex-direction: row;
     padding: 10px 20px 10px 20px;
-    background-color: HEX #7C3C00;
+    background-color:  #701F47;
     flex-wrap: nowrap;
     align-content: space-around;
     justify-content: center;
