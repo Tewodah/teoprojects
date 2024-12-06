@@ -1,38 +1,39 @@
 .nav-container{
     display: flex;
     padding: 25px 50px 25px 50px;
-    background-color:  #701F47;
     align-items: flex-end;
-    align-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    font-size: larger;
     flex-direction: row;
-    gap: 10px;
-    justify-content: flex-end;
-    font-size: x-large;
+    justify-content: space-between;
+    align-content: flex-end;
+    gap: 60px;
+    background-color: #8bf831a8 ;
+    text-align: end;
 }
 .biography-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: 50px 50px 50px 50px;
+    padding: 20px 50px 20px 50px;
     justify-content: flex-start;
     align-content: space-around;
-    background-color:  #E0B4E8;
+    background-color: #8bf831a8  ;
     gap: 50px;
     text-align: start;
 
 }
 .section-one {
-    width 25%;
+    width 50%;
 }
 .section-two {
-    width 75%;
+    width 50%;
 }
 .footer{
     display: flex;
     flex-direction: row;
     padding: 10px 20px 10px 20px;
-    background-color:  #701F47;
+    background-color: #8bf831a8 ;
     flex-wrap: nowrap;
     align-content: space-around;
     justify-content: center;

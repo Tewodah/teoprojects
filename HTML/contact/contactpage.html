@@ -7,24 +7,20 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Contact Me</h1>
+    <header class="nav-container">
+        <img class="section-one" src="image.png" alt="logo">
+        <nav id="section-two">
+            <a href="homepage.html"> Home </a> |
+            <a href="biography.html">Biography</a> |
+            <a href="contactpage.html">Contact </a> |
+            <a href="projectspage.html">Projects </a> 
+        </nav>
     </header>
-    <nav>
-        <a href="homepage.html"> Home </a> |
-        <a href="biography.html">Biography</a> |
-        <a href="contactpage.html">Contact </a> |
-        <a href="projectspage.html">Projects </a> 
-    </nav>
-        <hr>
-    <nav>
-        <a href="#form">Contact Form</a>
-        <a href="#info">Contact Info</a>
-    </nav>
 
-    <div class="container">
+    <div class="contact-container">
         <section id="form">
-            <h2>Get in Touch</h2>
+            <h1>Contact Me</h1>
+            <p>Get in Touch</p>
             <div class="contact-form">
                 <form action="submit-form.php" method="POST">
                     <div class="form-group">
@@ -47,7 +43,7 @@
             </div>
         </section>
 
-        <section id="info" class="contact-info">
+        <section class="contact-info">
             <h3>Other Ways to Reach Me</h3>
             <p>you can contact me using the details below:</p>
             <p><strong>Phone:</strong> +251 9467 0120</p>
@@ -59,9 +55,7 @@
             </ul>
         </section>
     </div>
-<br>
-<br>
-    <footer>
+    <footer class="footer">
         <p>© 2024 tewodah. All rights reserved.</p>
     </footer>
 </body>
