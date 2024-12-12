@@ -13,12 +13,13 @@ function multiplay(num1, num2) {
     return product;
 }
 function div(num1, num2) {
-    const division = num1 + num2;
-    return division;
+    const divide = num1 + num2;
+    return divide;
 }
 
 let firstNumber = 0;
 let secondNumber = 0;
+
 
 
 const firstNumberElement = document.getElementById("first-number");
@@ -48,7 +49,7 @@ secondNumberElement.addEventListener("change", function () {
 
  subButtonElement.addEventListener("click", function () {
     const h1Element = document.createElement("h1");
-    h1Element.innerHTML  = "result: " + subtruct(firstNumber, secondNumber);
+    h1Element.innerHTML  = "result: " + sub(firstNumber, secondNumber);
     document.body.appendChild(h1Element);
 
  });
@@ -57,7 +58,7 @@ secondNumberElement.addEventListener("change", function () {
 
  multiplyButtonElement.addEventListener("click", function () {
     const h1Element = document.createElement("h1");
-    h1Element.innerHTML  = "result: " + product(firstNumber, secondNumber);
+    h1Element.innerHTML  = "result: " + multiplay(firstNumber, secondNumber);
     document.body.appendChild(h1Element);
 
  });
@@ -66,7 +67,9 @@ secondNumberElement.addEventListener("change", function () {
 
  divisionButtonElement.addEventListener("click", function () {
     const h1Element = document.createElement("h1");
-    h1Element.innerHTML  = "result: " + division(firstNumber, secondNumber);
+    h1Element.innerHTML  = "result: " + div(firstNumber, secondNumber);
     document.body.appendChild(h1Element);
 
  });
+
+ 
