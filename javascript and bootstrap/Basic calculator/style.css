@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f77d7d
+}
+.calculator {
+    margin-top: 20px;
+}
+.operation-sign {
+    font-size: 24px;
+    margin: 0 10px;
+}

@@ -1,75 +1,41 @@
-
-function add(num1, num2) {
-    const sum = num1 + num2;
-    return sum;
+function updateOperationSign(sign) {
+    document.getElementById('operationSign').innerText = sign;
 }
 
-function sub(num1, num2) {
-    const subtruct = num1 - num2;
-    return subtruct;
+function evaluateOperation() {
+    const num1 = parseFloat(document.getElementById('num1').value);
+    const num2 = parseFloat(document.getElementById('num2').value);
+    const operation = document.querySelector('input[name="operation"]:checked').value;
+    let result;
+
+    switch (operation) {
+        case 'add':
+            result = num1 + num2;
+            break;
+        case 'subtract':
+            result = num1 - num2;
+            break;
+        case 'multiply':
+            result = num1 * num2;
+            break;
+        case 'divide':
+            result = num2 !== 0 ? num1 / num2 : 'Error: Division by zero';
+            break;
+        case 'modulus':
+            result = num1 % num2;
+            break;
+        case 'exponent':
+            result = Math.pow(num1, num2);
+            break;
+        case 'squareRoot':
+            result = Math.sqrt(num1);
+            break;
+            case 'log':
+            result = Math.log(num1);
+            break;
+        default:
+            result = 'Invalid operation';
+    }
+
+    document.getElementById('result').innerText = result;
 }
-function multiplay(num1, num2) {
-    const product = num1 * num2;
-    return product;
-}
-function div(num1, num2) {
-    const divide = num1 + num2;
-    return divide;
-}
-
-let firstNumber = 0;
-let secondNumber = 0;
-
-
-
-const firstNumberElement = document.getElementById("first-number");
-
-firstNumberElement.addEventListener("change", function (){
-    console.log("first number type"+ typeof this.value);
-    firstNumber = parseInt(this.value);
-});
-
-const secondNumberElement = document.getElementById("second-number");
-
-secondNumberElement.addEventListener("change", function () {
-  secondNumber = parseInt(this.value);
-});
-
-
- const addButtonElement = document.getElementById("add-button");
-
- addButtonElement.addEventListener("click", function () {
-    const h1Element = document.createElement("h1");
-    h1Element.innerHTML  = "result: " + add(firstNumber, secondNumber);
-    document.body.appendChild(h1Element);
-
- });
-
- const subButtonElement = document.getElementById("sub-button");
-
- subButtonElement.addEventListener("click", function () {
-    const h1Element = document.createElement("h1");
-    h1Element.innerHTML  = "result: " + sub(firstNumber, secondNumber);
-    document.body.appendChild(h1Element);
-
- });
-
- const multiplyButtonElement = document.getElementById("multiply-button");
-
- multiplyButtonElement.addEventListener("click", function () {
-    const h1Element = document.createElement("h1");
-    h1Element.innerHTML  = "result: " + multiplay(firstNumber, secondNumber);
-    document.body.appendChild(h1Element);
-
- });
-
- const divisionButtonElement = document.getElementById("division-button");
-
- divisionButtonElement.addEventListener("click", function () {
-    const h1Element = document.createElement("h1");
-    h1Element.innerHTML  = "result: " + div(firstNumber, secondNumber);
-    document.body.appendChild(h1Element);
-
- });
-
- 
