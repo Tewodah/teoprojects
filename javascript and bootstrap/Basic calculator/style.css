@@ -1,11 +1,15 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    height: 100vh; 
+    height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    background-color: #f77d7d
+    background-color: #3664b9a8;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
 }
 .calculator {
     margin-top: 20px;
